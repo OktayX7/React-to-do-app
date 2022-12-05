@@ -5,7 +5,7 @@ class TodoList extends Component {
   render() {
     return (
       <div>
-        <ul>
+        <ul className="ms-0">
           {this.props.items.map((item, index) => (
             <TodoItem
               deleteItem={this.props.deleteItem}

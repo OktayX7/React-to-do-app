@@ -19,16 +19,16 @@ class TodoItem extends Component {
   }
   render() {
     return (
-      <li className="mb-3 bg-danger w-75 d-flex justify-content-between">
-        {this.props.item}
+      <li className="mb-3  text-bg-danger w-50 d-flex justify-content-between">
+        <span className="ms-3">{this.props.item}</span>
         <div>
           {" "}
-          <button onClick={this.deleteItem}>SİL</button>
+          <button onClick={this.deleteItem}>Delete</button>
           <button className="ms-3" onClick={this.editItem}>
-            DÜZENLE
+            Edit
           </button>
           <button className="ms-3" onClick={this.completedItem}>
-            TAMAMLANDI
+            Completed
           </button>
         </div>
       </li>

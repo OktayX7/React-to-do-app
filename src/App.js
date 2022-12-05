@@ -17,7 +17,7 @@ class App extends Component {
     this.editItem = this.editItem.bind(this);
     this.completedItem = this.completedItem.bind(this);
     this.state = {
-      items: ["Item 1", "Item 2", "Item 3"],
+      items: ["HTML", "CSS", "VANİLYA JS", "REACT"],
     };
   }
   addItem(item) {
@@ -102,7 +102,7 @@ class App extends Component {
       description: "This is a simple todo app",
     };
     return (
-      <div>
+      <div className="container">
         <Header title={app.title} description={app.description} />
         <TodoList
           items={this.state.items}
